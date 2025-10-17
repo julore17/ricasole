@@ -1,0 +1,150 @@
+/* ESTILOS GLOBALES */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: antiquewhite;
+    font-family: Arial, sans-serif;
+}
+
+/* ENCABEZADOS Y PÁRRAFOS */
+h1, h3 {
+    color: brown;
+    text-align: center;
+    margin: 20px 0 10px;
+}
+.Tamaño {
+ font-size: 100px;
+}
+
+p {
+    padding: 5px 20px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+/* IMÁGENES */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+/* CARRUSEL */
+#conteRicasoleCarrusel {
+    height: 300px; /* Altura más cómoda para mostrar imágenes */
+    width: 100%;
+    display: flex;
+    overflow-x: scroll; 
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth; /* Añade desplazamiento suave */
+    border-bottom: 2px solid #ccc;
+}
+
+.ricasoleCarrusel {
+    min-width: 100%;
+    height: 100%;
+    position: relative;
+    scroll-snap-align: start;
+}
+
+.tarjetaCarrusel {
+    width: 100%;
+    height: 100%;
+}
+
+#conteRicasoleCarrusel .ricasoleCarrusel img { 
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+}
+
+/* FLECHAS DE NAVEGACIÓN */
+.flechasCarrusel {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 0 10px;
+    z-index: 10;
+    pointer-events: none; 
+}
+
+.flechasCarrusel a {
+    text-decoration: none;
+    pointer-events: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 50%;
+    line-height: 1;
+    transition: background-color 0.3s;
+}
+
+.flechasCarrusel a:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* PUNTOS DE NAVEGACIÓN */
+#contePuntos {
+    background-color: rgb(105, 47, 47);
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+#contePuntos a {
+    font-size: 2em;
+    color: rgb(232, 32, 32);
+    text-decoration: none;
+    margin: 0 5px;
+    line-height: 1;
+}
+.botones{
+    /* display flex: alinea los botones*/
+    display: flex;
+    /* justify content: centra mis botones*/
+    justify-content: center;
+    /* gap: me da espacio entre los botones*/
+    gap: 10px;
+}
+.boton-menu{
+    color: rgb(240, 3, 3);
+}
+.boton-contactenos{
+    color: rgb(212, 212, 18);
+}
+.boton-calificaciones{
+    color:  rgb(240, 3, 3);
+}
+.boton-ubicacion{
+    color: rgb(212, 212, 18);
+}
+.corazon-amarillo{
+    color: yellow;
+}
+.corazon-azul{
+    color: blue;
+}
+.corazon-rojo{
+    color: red;
+}
+.corazon-amarillo-boton{
+    color: yellow;
+    font-size: 30px;
+    margin-left: 10px;
+}
+.corazon-rojo-boton{
+    color: red;
+    font-size: 30px;
+    margin-right: 10px;
+}
