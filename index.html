@@ -55,11 +55,11 @@
         <span class="corazon-rojo-boton">&#9829</span>
         <button type="submit" class="boton-menu">"Menu"</button>
         <span class="corazon-amarillo-boton">&#9829</span>
-        <button type="submit" class="boton-contactenos ">"Contáctanos"</button>
+        <button type="button" onclick="location.href" class="boton-contactenos ">"Contáctanos"</button>
         <span class="corazon-rojo-boton">&#9829</span>
-        <button type="submit" class="boton-calificaciones">"Nuestras calificaciones"</button>
+        <button id="boton" type="button" onclick="location.href='#calificaciones'" class="boton-calificaciones">"Nuestras calificaciones"</button>
         <span class="corazon-amarillo-boton">&#9829</span>
-        <button type="submit" class="boton-ubicacion">"Nuestra Ubicación"</button>
+        <button id="boton_modificado" type="button" onclick="location.href='#ubicacion'" class="boton-ubicacion">"Nuestra Ubicación"</button>
         <span class="corazon-rojo-boton">&#9829</span>
     </form>
 
@@ -83,11 +83,11 @@
     <img src="imagenes/Coctel_promo.jpeg" alt="Promoción de cócteles">
 
     <address>
-        <p><a href="mailto:Ricasole.sas@gmail.com">Contáctanos por correo</a></p>
+        <p><a id="contactanos" href="mailto:Ricasole.sas@gmail.com">Contáctanos por correo</a></p>
         <p><a href="https://wa.me/573114649279?text=¡Bienvenido%20a%20Ricasole%20Picadas%20donde%20cada%20sabor%20cuenta%20una%20historia!">Comunícate a nuestro WhatsApp</a></p>
     </address>
 
-    <p><a href="https://www.google.com/search?q=Picadas+Ricasole+Opiniones" target="_blank"><b>Mira nuestras calificaciones</b></a></p>
+    <p><a id="calificaciones" href="https://www.google.com/search?q=Picadas+Ricasole+Opiniones" target="_blank"><b>Mira nuestras calificaciones</b></a></p>
 
     <h3><i>Nuestras Picadas</i></h3>
     <p>Nuestras picadas incluyen los mejores productos de calidad y preparación artesanal:</p>
@@ -103,11 +103,11 @@
     </ul>
     <p>Y nuestras exclusivas salsas hechas por nosotros con un nivel excepcional.</p>
 
-    <h3><i>Nuestra Ubicación</i></h3>
+    <h3 id="ubicacion"><i>Nuestra Ubicación</i></h3>
     <iframe 
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15906.064405480734!2d-74.0887461!3d4.67997845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99a42f26b5ff%3A0xc5eb5e38cdef457d!2sPicadas%20Ricasole!5e0!3m2!1ses-419!2sco!4v1759418875947!5m2!1ses-419!2sco" 
         width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
     </iframe>
-
+    <script src="script.js"></script>
 </body>
 </html>
